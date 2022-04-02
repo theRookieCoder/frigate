@@ -253,7 +253,8 @@ dependencies = [
 name = "frigate"
 version = "1.0.0"
 dependencies = [
- "libium",
+ "libium 1.5.1",
+ "libium 1.6.0",
  "serde_json",
  "tokio",
 ]
@@ -569,9 +570,29 @@ checksum = "efaa7b300f3b5fe8eb6bf21ce3895e1751d9665086af2d64b42f19701015ff4f"
 
 [[package]]
 name = "libium"
+version = "1.5.1"
+source = "git+https://github.com/theRookieCoder/libium?rev=2c9f8f7fd7844138319482156bfe2a2cf4f9d699#2c9f8f7fd7844138319482156bfe2a2cf4f9d699"
+dependencies = [
+ "bytes",
+ "clap",
+ "dialoguer",
+ "ferinth",
+ "furse",
+ "home",
+ "lazy_static",
+ "octocrab",
+ "reqwest",
+ "semver",
+ "serde",
+ "serde_json",
+ "thiserror",
+ "tokio",
+]
+
+[[package]]
+name = "libium"
 version = "1.6.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "a04b8bbf138a995edf4d380d7c36e82f334972510341336e01e92384d90aa1f1"
+source = "git+https://github.com/theRookieCoder/libium?rev=8db7deed050540a276f800b92baa885c44e63ce8#8db7deed050540a276f800b92baa885c44e63ce8"
 dependencies = [
  "bytes",
  "clap",

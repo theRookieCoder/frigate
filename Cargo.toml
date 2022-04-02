@@ -5,7 +5,9 @@ edition = "2021"
 description = "Update a Libium 1.5 config to a Libium 1.6 config"
 
 [dependencies]
+# 1.6.0
+libium_new = { package = "libium", git = "https://github.com/theRookieCoder/libium", rev = "8db7deed050540a276f800b92baa885c44e63ce8" }
+# 1.5.1
+libium_old = { package = "libium", git = "https://github.com/theRookieCoder/libium", rev = "2c9f8f7fd7844138319482156bfe2a2cf4f9d699" }
 tokio = { version = "1", default-features = false, features = ["rt-multi-thread", "macros"] }
-libium_new = { package = "libium", version = "1.6" }
-libium_old = { package = "libium", version = "1.5" }
 serde_json = "1"
