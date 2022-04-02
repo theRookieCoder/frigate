@@ -2,7 +2,7 @@
 name = "frigate"
 version = "1.0.0"
 edition = "2021"
-about = "Update a Libium 1.5 config to a Libium 1.6 config"
+description = "Update a Libium 1.5 config to a Libium 1.6 config"
 
 [dependencies]
 tokio = { version = "1", default-features = false, features = ["rt-multi-thread", "macros"] }
